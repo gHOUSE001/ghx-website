@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHX Pricing - Transparent Investment in Your Financial Future | GRYTTE Cleveland</title>
+  <meta name="description" content="GHX pricing: Foundations credit repair from $74/mo, Full Program from $186/mo, Business package $4K/year. 30% annual discount. Cleveland financial coaching.">
+  <meta name="keywords" content="financial coaching cost Cleveland, credit repair pricing, affordable credit help Ohio, financial transformation investment, GHX program cost">
+
+  <link rel="canonical" href="https://gryttefinancial.com/pricing">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="GHX Pricing - Investment in Your Financial Future">
+  <meta property="og:description" content="Transparent pricing for credit repair and financial transformation. Foundations from $74/mo, Full Program from $186/mo.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gryttefinancial.com/pricing">
+  <meta property="og:image" content="https://gryttefinancial.com/images/og-pricing.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="GRYTTE Financial Services">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GHX Pricing - Transparent Investment in Your Financial Future">
+  <meta name="twitter:description" content="Foundations from $74/mo, Full Program from $186/mo, Business package $4K/year. 30% annual discount available.">
+  <meta name="twitter:image" content="https://gryttefinancial.com/images/og-pricing.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FF9EB5',
+            'primary-dark': '#E88A9F',
+            secondary: '#000000',
+            background: '#F8F8F8',
+            success: '#4CAF50',
+            warning: '#FFC107',
+            error: '#F44336',
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .toggle-switch {
+      position: relative;
+      width: 200px;
+      height: 48px;
+      background: #1f2937;
+      border-radius: 24px;
+      padding: 4px;
+      cursor: pointer;
+    }
+    .toggle-slider {
+      position: absolute;
+      width: calc(50% - 4px);
+      height: 40px;
+      background: #FF9EB5;
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+    }
+    .toggle-switch.annual .toggle-slider {
+      transform: translateX(100%);
+    }
+    .toggle-label {
+      position: relative;
+      z-index: 10;
+      width: 50%;
+      text-align: center;
+      font-weight: 600;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+    .monthly-price, .annual-price { display: none; }
+    .show-monthly .monthly-price { display: block; }
+    .show-monthly .annual-price { display: none; }
+    .show-annual .monthly-price { display: none; }
+    .show-annual .annual-price { display: block; }
+  </style>
+</head>
+<body class="font-body bg-black text-white">
+
+  <!-- Header -->
+  <header class="bg-black/95 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 md:h-20">
+        <a href="/" class="flex items-center">
+          <span class="font-heading font-bold text-2xl text-primary">GRYTTE</span>
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/about" class="text-gray-300 hover:text-primary transition">About</a>
+          <a href="/program" class="text-gray-300 hover:text-primary transition">Program</a>
+          <a href="/results" class="text-gray-300 hover:text-primary transition">Results</a>
+          <a href="/pricing" class="text-primary font-semibold">Pricing</a>
+          <a href="/resources" class="text-gray-300 hover:text-primary transition">Resources</a>
+          <a href="/faq" class="text-gray-300 hover:text-primary transition">FAQ</a>
+          <a href="/login" class="text-gray-300 hover:text-primary transition">Login</a>
+          <a href="/apply" class="bg-primary text-white px-6 py-2 rounded-lg font-semibold btn-primary">Apply Now</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col space-y-3">
+          <a href="/about" class="text-gray-300 hover:text-primary transition py-2">About</a>
+          <a href="/program" class="text-gray-300 hover:text-primary transition py-2">Program</a>
+          <a href="/results" class="text-gray-300 hover:text-primary transition py-2">Results</a>
+          <a href="/pricing" class="text-primary font-semibold py-2">Pricing</a>
+          <a href="/resources" class="text-gray-300 hover:text-primary transition py-2">Resources</a>
+          <a href="/faq" class="text-gray-300 hover:text-primary transition py-2">FAQ</a>
+          <a href="/login" class="text-gray-300 hover:text-primary transition py-2">Login</a>
+          <a href="/apply" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold text-center btn-primary">Apply Now</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-black py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="font-heading text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+          Total Transparency.<br/>No Hidden Fees.
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-8">
+          Choose the path that fits your goals. From credit repair only to full business transformation.
+        </p>
+
+        <!-- Monthly/Annual Toggle -->
+        <div class="flex flex-col items-center gap-4 mb-8">
+          <p class="text-gray-400 text-sm">For GHX Program pricing:</p>
+          <div id="billing-toggle" class="toggle-switch flex items-center" onclick="toggleBilling()">
+            <div class="toggle-slider"></div>
+            <span class="toggle-label text-white">Monthly</span>
+            <span class="toggle-label text-gray-400">Annual</span>
+          </div>
+          <div id="annual-savings" class="hidden bg-success/20 border border-success/50 rounded-full px-4 py-2">
+            <span class="text-success font-semibold text-sm">Save 30% with annual billing!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Tiers -->
+  <section id="pricing-cards" class="py-16 md:py-24 bg-black show-monthly">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
+
+        <!-- TIER 1: GHX Foundations -->
+        <div class="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-gray-700 transition relative flex flex-col">
+          <div class="absolute top-4 right-4">
+            <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full">CREDIT REPAIR ONLY</span>
+          </div>
+
+          <div class="mb-4 pt-4">
+            <h3 class="font-heading text-2xl font-bold mb-1">GHX Foundations</h3>
+            <p class="text-gray-400 text-sm">A-la-carte credit repair service</p>
+          </div>
+
+          <div class="mb-4">
+            <div class="flex items-baseline gap-2">
+              <span class="text-5xl font-heading font-bold">$74</span>
+              <span class="text-gray-400">/month</span>
+            </div>
+            <p class="text-primary font-semibold mt-2">+ $150 refundable deposit</p>
+            <p class="text-sm text-gray-500 mt-1">3-month satisfaction guarantee</p>
+          </div>
+
+          <div class="bg-yellow-900/20 border border-yellow-700/50 rounded-lg p-3 mb-4">
+            <p class="text-yellow-300 text-sm font-medium">
+              Note: This is NOT the full GHX transformation program. Just credit repair services.
+            </p>
+          </div>
+
+          <div class="space-y-3 mb-6">
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-gray-300">CRM tracking & management</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-gray-300">Professional dispute letters</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-gray-300">Access to affiliate credit products</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-gray-300">Monthly progress reports</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-gray-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+              <span class="text-gray-500">No weekly coaching calls</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-gray-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+              <span class="text-gray-500">No income/savings coaching</span>
+            </div>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg p-3 mb-4">
+            <p class="text-sm text-gray-400 mb-1">Satisfaction Guarantee:</p>
+            <p class="font-semibold text-white">Cancel within 3 months = $150 deposit back</p>
+          </div>
+
+          <a href="/apply?tier=foundations" class="block w-full text-center border-2 border-gray-700 text-white py-3 rounded-lg font-semibold hover:border-primary hover:text-primary transition mt-auto">
+            Get Started - Foundations
+          </a>
+        </div>
+
+        <!-- TIER 2: GHX Program (Most Popular) -->
+        <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-6 border-2 border-primary shadow-2xl shadow-primary/20 relative scale-100 lg:scale-105 flex flex-col">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-6 py-1.5 rounded-full text-sm font-bold">
+            RECOMMENDED
+          </div>
+
+          <div class="mb-4 pt-4">
+            <h3 class="font-heading text-2xl font-bold mb-1">GHX Program</h3>
+            <p class="text-gray-400 text-sm">Complete 12-month transformation</p>
+          </div>
+
+          <!-- Monthly Pricing -->
+          <div class="monthly-price mb-4">
+            <div class="flex items-baseline gap-2">
+              <span class="text-5xl font-heading font-bold text-primary">$186</span>
+              <span class="text-gray-400">- $216/mo</span>
+            </div>
+            <p class="text-sm text-gray-400 mt-1">Based on your selected stack</p>
+          </div>
+
+          <!-- Annual Pricing -->
+          <div class="annual-price mb-4">
+            <div class="flex items-baseline gap-2">
+              <span class="text-5xl font-heading font-bold text-primary">$2,016</span>
+              <span class="text-gray-400">- $2,340/yr</span>
+            </div>
+            <p class="text-sm text-success mt-1 font-semibold">Save 30% on coaching & membership!</p>
+          </div>
+
+          <div class="bg-gray-800/50 rounded-lg p-3 mb-4 border border-gray-700">
+            <p class="text-sm text-gray-400 mb-2">Monthly breakdown:</p>
+            <div class="text-xs space-y-1 text-gray-400">
+              <div class="flex justify-between"><span>Product Stack (Monarch incl.)</span><span>$50-80</span></div>
+              <div class="flex justify-between"><span>Credit Monitor (3-bureau)</span><span>~$25</span></div>
+              <div class="flex justify-between"><span>Membership Fee</span><span>$22</span></div>
+              <div class="flex justify-between"><span>Coaching Fee</span><span>$80</span></div>
+              <div class="flex justify-between"><span>Affiliate Support</span><span>$9</span></div>
+            </div>
+          </div>
+
+          <div class="space-y-3 mb-6">
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-white font-medium">48 weekly coaching calls</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-white font-medium">Complete credit repair</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-white font-medium">Budget & savings systems (Monarch)</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-white font-medium">3-bureau credit monitoring</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-white font-medium">Income increase coaching</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-white font-medium">Alumni community access</span>
+            </div>
+          </div>
+
+          <div class="bg-primary/10 border border-primary rounded-lg p-3 mb-4">
+            <p class="text-sm text-gray-400 mb-1">Expected outcome:</p>
+            <p class="font-semibold text-white">720-750 credit score</p>
+            <p class="text-sm text-primary font-medium">$10K+ saved | 20%+ income increase</p>
+          </div>
+
+          <a href="/apply?tier=program" class="block w-full text-center bg-primary text-white py-4 rounded-lg font-semibold btn-primary shadow-lg hover:bg-primary-dark transition mt-auto">
+            Start Your Transformation
+          </a>
+        </div>
+
+        <!-- TIER 3: GHX for Business -->
+        <div class="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-primary/50 transition relative overflow-hidden flex flex-col">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl"></div>
+          <div class="absolute top-4 right-4">
+            <span class="bg-primary/20 text-primary text-xs font-semibold px-3 py-1 rounded-full">ENTREPRENEURS</span>
+          </div>
+
+          <div class="mb-4 pt-4 relative">
+            <h3 class="font-heading text-2xl font-bold mb-1">GHX for Business</h3>
+            <p class="text-gray-400 text-sm">Complete business fundability system</p>
+          </div>
+
+          <div class="mb-4 relative">
+            <div class="flex items-baseline gap-2">
+              <span class="text-5xl font-heading font-bold">$4,000</span>
+              <span class="text-gray-400">/year</span>
+            </div>
+            <p class="text-sm text-gray-500 mt-1">Full access to funding infrastructure</p>
+          </div>
+
+          <div class="bg-primary/10 border border-primary/30 rounded-lg p-3 mb-4 relative">
+            <p class="text-sm text-primary font-semibold">Unlock up to $150K+ in business credit</p>
+            <p class="text-xs text-gray-400">Even for startups with no collateral</p>
+          </div>
+
+          <div class="space-y-3 mb-6 relative">
+            <p class="text-sm text-gray-400 font-semibold">Everything in GHX Program, PLUS:</p>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-gray-300">Weekly 1-on-1 business strategy calls</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-gray-300">125+ Fundability Factor assessment</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-gray-300">D&B, Experian & Equifax business setup</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-gray-300">300+ lender & vendor network access</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-gray-300">High-limit store, fleet & business cards</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-gray-300">Business bookkeeping & Notion setup</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-gray-300">Professional website + 1yr hosting</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-gray-300">Complete product stack included</span>
+            </div>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg p-3 mb-4 relative">
+            <p class="text-sm text-gray-400 mb-1">Best for:</p>
+            <p class="font-semibold text-white">Entrepreneurs ready to build real business credit</p>
+            <p class="text-xs text-gray-500 mt-1">Separate your personal & business finances for good</p>
+          </div>
+
+          <a href="/apply?tier=business" class="block w-full text-center border-2 border-primary text-primary py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition mt-auto">
+            Apply for GHX Business
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Money-Back Guarantee -->
+  <section class="py-20 bg-gradient-to-br from-green-900/20 to-green-800/10 border-y border-green-900/50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <div class="inline-flex items-center justify-center w-20 h-20 bg-success/20 border-2 border-success rounded-full mb-6">
+          <svg class="w-10 h-10 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h2 class="font-heading text-4xl md:text-5xl font-extrabold mb-4 text-white">Transformation Guarantee</h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+          For GHX Program members who pay annually:
+        </p>
+
+        <div class="bg-black/40 border border-success/30 rounded-2xl p-8 max-w-2xl mx-auto">
+          <p class="text-lg text-gray-300 mb-4">
+            Save or pay down <span class="text-success font-bold">($10,000 - your program costs)</span> in debt within 12 months...
+          </p>
+          <p class="text-2xl font-heading font-bold text-success mb-4">
+            Get ALL coaching & membership fees REFUNDED!
+          </p>
+          <p class="text-gray-400 text-sm">
+            Example: If your total program cost is $2,000, save/pay down $8,000 = full refund of coaching fees.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stack Selection Info -->
+  <section class="py-20 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4">Choose Your Stack</h2>
+        <p class="text-xl text-gray-400">GHX Program offers two stack options based on your budget</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Essential Stack -->
+        <div class="bg-black rounded-2xl p-8 border border-gray-800">
+          <h3 class="font-heading text-2xl font-bold mb-2">Essential Stack</h3>
+          <p class="text-gray-400 text-sm mb-4">Best for income under $40K/year</p>
+          <div class="text-4xl font-heading font-bold text-primary mb-4">~$186<span class="text-lg text-gray-400">/mo</span></div>
+
+          <div class="space-y-3 text-sm">
+            <div class="flex justify-between border-b border-gray-800 pb-2">
+              <span class="text-gray-400">Product Stack (Monarch incl.)</span>
+              <span class="text-white">~$50</span>
+            </div>
+            <div class="flex justify-between border-b border-gray-800 pb-2">
+              <span class="text-gray-400">Credit Monitor (3-bureau)</span>
+              <span class="text-white">~$25</span>
+            </div>
+            <div class="flex justify-between border-b border-gray-800 pb-2">
+              <span class="text-gray-400">Membership Fee</span>
+              <span class="text-white">$22</span>
+            </div>
+            <div class="flex justify-between border-b border-gray-800 pb-2">
+              <span class="text-gray-400">Coaching Fee</span>
+              <span class="text-white">$80</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-400">Affiliate Support</span>
+              <span class="text-white">$9</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium Stack -->
+        <div class="bg-black rounded-2xl p-8 border border-primary">
+          <div class="flex items-center gap-2 mb-2">
+            <h3 class="font-heading text-2xl font-bold">Premium Stack</h3>
+            <span class="bg-primary/20 text-primary text-xs px-2 py-1 rounded">FASTER RESULTS</span>
+          </div>
+          <p class="text-gray-400 text-sm mb-4">Best for income $40K+/year</p>
+          <div class="text-4xl font-heading font-bold text-primary mb-4">~$216<span class="text-lg text-gray-400">/mo</span></div>
+
+          <div class="space-y-3 text-sm">
+            <div class="flex justify-between border-b border-gray-800 pb-2">
+              <span class="text-gray-400">Product Stack (Enhanced)</span>
+              <span class="text-white">~$80</span>
+            </div>
+            <div class="flex justify-between border-b border-gray-800 pb-2">
+              <span class="text-gray-400">Credit Monitor (3-bureau)</span>
+              <span class="text-white">~$25</span>
+            </div>
+            <div class="flex justify-between border-b border-gray-800 pb-2">
+              <span class="text-gray-400">Membership Fee</span>
+              <span class="text-white">$22</span>
+            </div>
+            <div class="flex justify-between border-b border-gray-800 pb-2">
+              <span class="text-gray-400">Coaching Fee</span>
+              <span class="text-white">$80</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-400">Affiliate Support</span>
+              <span class="text-white">$9</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-gray-500 mt-8 text-sm">
+        Not sure which stack is right for you? We'll help you decide on your discovery call.
+      </p>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="py-20 bg-black">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4">Compare All Options</h2>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left">
+          <thead>
+            <tr class="border-b border-gray-800">
+              <th class="py-4 px-4 text-gray-400 font-medium">Feature</th>
+              <th class="py-4 px-4 text-center">Foundations</th>
+              <th class="py-4 px-4 text-center bg-primary/5 border-x border-primary/20">GHX Program</th>
+              <th class="py-4 px-4 text-center">GHX Business</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm">
+            <tr class="border-b border-gray-800">
+              <td class="py-4 px-4 text-gray-300">Credit Repair</td>
+              <td class="py-4 px-4 text-center text-success">&#10003;</td>
+              <td class="py-4 px-4 text-center text-success bg-primary/5 border-x border-primary/20">&#10003;</td>
+              <td class="py-4 px-4 text-center text-success">&#10003;</td>
+            </tr>
+            <tr class="border-b border-gray-800">
+              <td class="py-4 px-4 text-gray-300">Weekly Coaching Calls</td>
+              <td class="py-4 px-4 text-center text-gray-600">&#10007;</td>
+              <td class="py-4 px-4 text-center text-success bg-primary/5 border-x border-primary/20">48 calls</td>
+              <td class="py-4 px-4 text-center text-success">52 calls</td>
+            </tr>
+            <tr class="border-b border-gray-800">
+              <td class="py-4 px-4 text-gray-300">3-Bureau Credit Monitoring</td>
+              <td class="py-4 px-4 text-center text-gray-600">&#10007;</td>
+              <td class="py-4 px-4 text-center text-success bg-primary/5 border-x border-primary/20">&#10003;</td>
+              <td class="py-4 px-4 text-center text-success">&#10003;</td>
+            </tr>
+            <tr class="border-b border-gray-800">
+              <td class="py-4 px-4 text-gray-300">Budget & Savings Coaching</td>
+              <td class="py-4 px-4 text-center text-gray-600">&#10007;</td>
+              <td class="py-4 px-4 text-center text-success bg-primary/5 border-x border-primary/20">&#10003;</td>
+              <td class="py-4 px-4 text-center text-success">&#10003;</td>
+            </tr>
+            <tr class="border-b border-gray-800">
+              <td class="py-4 px-4 text-gray-300">Income Increase Support</td>
+              <td class="py-4 px-4 text-center text-gray-600">&#10007;</td>
+              <td class="py-4 px-4 text-center text-success bg-primary/5 border-x border-primary/20">&#10003;</td>
+              <td class="py-4 px-4 text-center text-success">&#10003;</td>
+            </tr>
+            <tr class="border-b border-gray-800">
+              <td class="py-4 px-4 text-gray-300">Business Credit Development</td>
+              <td class="py-4 px-4 text-center text-gray-600">&#10007;</td>
+              <td class="py-4 px-4 text-center text-gray-600 bg-primary/5 border-x border-primary/20">&#10007;</td>
+              <td class="py-4 px-4 text-center text-success">&#10003;</td>
+            </tr>
+            <tr class="border-b border-gray-800">
+              <td class="py-4 px-4 text-gray-300">300+ Funding Partners</td>
+              <td class="py-4 px-4 text-center text-gray-600">&#10007;</td>
+              <td class="py-4 px-4 text-center text-gray-600 bg-primary/5 border-x border-primary/20">&#10007;</td>
+              <td class="py-4 px-4 text-center text-success">&#10003;</td>
+            </tr>
+            <tr class="border-b border-gray-800">
+              <td class="py-4 px-4 text-gray-300">Business Credit Potential</td>
+              <td class="py-4 px-4 text-center text-gray-600">&#10007;</td>
+              <td class="py-4 px-4 text-center text-gray-600 bg-primary/5 border-x border-primary/20">&#10007;</td>
+              <td class="py-4 px-4 text-center text-primary font-semibold">Up to $150K+</td>
+            </tr>
+            <tr class="border-b border-gray-800">
+              <td class="py-4 px-4 text-gray-300">Website Creation + Hosting</td>
+              <td class="py-4 px-4 text-center text-gray-600">&#10007;</td>
+              <td class="py-4 px-4 text-center text-gray-600 bg-primary/5 border-x border-primary/20">&#10007;</td>
+              <td class="py-4 px-4 text-center text-success">&#10003;</td>
+            </tr>
+            <tr class="border-b border-gray-800">
+              <td class="py-4 px-4 text-gray-300">Money-Back Guarantee</td>
+              <td class="py-4 px-4 text-center text-white">$150 deposit back</td>
+              <td class="py-4 px-4 text-center text-success bg-primary/5 border-x border-primary/20">Coaching fees</td>
+              <td class="py-4 px-4 text-center text-success">Coaching fees</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-4 text-gray-300 font-semibold">Starting Price</td>
+              <td class="py-4 px-4 text-center text-white font-bold">$74/mo</td>
+              <td class="py-4 px-4 text-center text-primary font-bold bg-primary/5 border-x border-primary/20">$186/mo</td>
+              <td class="py-4 px-4 text-center text-white font-bold">$4,000/yr</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-20 bg-gray-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4">Pricing FAQs</h2>
+      </div>
+
+      <div class="space-y-4">
+        <div class="bg-black rounded-xl overflow-hidden border border-gray-800">
+          <button class="accordion-btn w-full p-6 text-left flex justify-between items-center hover:bg-gray-900/50 transition">
+            <span class="font-semibold text-lg text-white">What's the difference between Foundations and the full GHX Program?</span>
+            <svg class="accordion-icon w-6 h-6 text-primary transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content px-6">
+            <p class="pb-6 text-gray-400">Foundations is credit repair only - we send dispute letters and track your progress, but you don't get coaching calls, savings systems, or income support. The full GHX Program is complete financial transformation with 48 weekly coaching calls, budget systems, income coaching, and our guarantee.</p>
+          </div>
+        </div>
+
+        <div class="bg-black rounded-xl overflow-hidden border border-gray-800">
+          <button class="accordion-btn w-full p-6 text-left flex justify-between items-center hover:bg-gray-900/50 transition">
+            <span class="font-semibold text-lg text-white">How does the money-back guarantee work?</span>
+            <svg class="accordion-icon w-6 h-6 text-primary transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content px-6">
+            <p class="pb-6 text-gray-400">For annual GHX Program members: If you save or pay down ($10,000 minus your total program costs) in debt within 12 months, you get all coaching and membership fees refunded. Example: $2,000 program cost means you need to save/pay down $8,000 to get your coaching fees back.</p>
+          </div>
+        </div>
+
+        <div class="bg-black rounded-xl overflow-hidden border border-gray-800">
+          <button class="accordion-btn w-full p-6 text-left flex justify-between items-center hover:bg-gray-900/50 transition">
+            <span class="font-semibold text-lg text-white">Can I upgrade from Foundations to the full program later?</span>
+            <svg class="accordion-icon w-6 h-6 text-primary transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content px-6">
+            <p class="pb-6 text-gray-400">Absolutely! Many people start with Foundations to fix their credit, then upgrade to the full GHX Program when they're ready for complete transformation. We'll apply a portion of what you've paid toward your upgrade.</p>
+          </div>
+        </div>
+
+        <div class="bg-black rounded-xl overflow-hidden border border-gray-800">
+          <button class="accordion-btn w-full p-6 text-left flex justify-between items-center hover:bg-gray-900/50 transition">
+            <span class="font-semibold text-lg text-white">What is Business Fundability and how does it work?</span>
+            <svg class="accordion-icon w-6 h-6 text-primary transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content px-6">
+            <p class="pb-6 text-gray-400">Our Fundability System assesses 125+ factors that affect your business's ability to get approved for credit and loans. We set you up with Dun & Bradstreet, Experian, and Equifax business credit profiles, then connect you with our network of 300+ lenders and vendors. Most clients can access $150K+ in business credit lines - even startups with no collateral. This is exclusive to GHX for Business.</p>
+          </div>
+        </div>
+
+        <div class="bg-black rounded-xl overflow-hidden border border-gray-800">
+          <button class="accordion-btn w-full p-6 text-left flex justify-between items-center hover:bg-gray-900/50 transition">
+            <span class="font-semibold text-lg text-white">How do I know which stack (Essential vs Premium) to choose?</span>
+            <svg class="accordion-icon w-6 h-6 text-primary transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content px-6">
+            <p class="pb-6 text-gray-400">It's based on your budget and income. Essential Stack (~$50 in products) is for those earning under $40K/year. Premium Stack (~$80 in products) is for those earning $40K+ and wanting faster credit-building results. We'll discuss this on your discovery call.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-20 md:py-28 bg-gradient-to-br from-primary via-pink-500 to-pink-600">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <h2 class="font-heading text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+        Ready to Start Your<br/>Transformation?
+      </h2>
+      <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+        Book a free discovery call. We'll help you choose the right path for your goals and budget.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+        <a href="/apply" class="inline-block bg-black text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-900 transition shadow-2xl">
+          Book Free Discovery Call
+        </a>
+        <a href="/results" class="inline-block bg-white/10 backdrop-blur-sm border-2 border-white text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/20 transition">
+          See Client Results
+        </a>
+      </div>
+      <p class="text-white/80 text-sm">No pressure. No sales pitch. Just an honest conversation about your goals.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-gray-800 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div class="md:col-span-2">
+          <span class="font-heading font-bold text-3xl text-primary">GRYTTE</span>
+          <p class="mt-4 text-gray-400 max-w-md">
+            12-month financial transformation program for ambitious men in Cleveland. Credit repair, financial coaching, and identity transformation.
+          </p>
+          <div class="flex gap-4 mt-6">
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition" aria-label="TikTok">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition" aria-label="YouTube">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold mb-4 text-white">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="/about" class="text-gray-400 hover:text-primary transition">About</a></li>
+            <li><a href="/program" class="text-gray-400 hover:text-primary transition">Program</a></li>
+            <li><a href="/results" class="text-gray-400 hover:text-primary transition">Results</a></li>
+            <li><a href="/pricing" class="text-gray-400 hover:text-primary transition">Pricing</a></li>
+            <li><a href="/resources" class="text-gray-400 hover:text-primary transition">Resources</a></li>
+            <li><a href="/faq" class="text-gray-400 hover:text-primary transition">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold mb-4 text-white">Contact</h4>
+          <ul class="space-y-3 text-gray-400">
+            <li>Cleveland, Ohio</li>
+            <li><a href="mailto:hello@gryttefinancial.com" class="hover:text-primary transition">hello@gryttefinancial.com</a></li>
+          </ul>
+          <div class="mt-6">
+            <a href="/apply" class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-semibold btn-primary">Apply Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2025 GRYTTE Financial Services. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="sticky-cta md:hidden">
+    <a href="/apply" class="block w-full bg-primary text-white py-3 rounded-lg font-semibold text-center btn-primary">
+      Book Free Discovery Call
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Billing toggle functionality
+    function toggleBilling() {
+      const toggle = document.getElementById('billing-toggle');
+      const pricingSection = document.getElementById('pricing-cards');
+      const annualSavings = document.getElementById('annual-savings');
+      const labels = toggle.querySelectorAll('.toggle-label');
+
+      toggle.classList.toggle('annual');
+
+      if (toggle.classList.contains('annual')) {
+        pricingSection.classList.remove('show-monthly');
+        pricingSection.classList.add('show-annual');
+        annualSavings.classList.remove('hidden');
+        labels[0].classList.remove('text-white');
+        labels[0].classList.add('text-gray-400');
+        labels[1].classList.remove('text-gray-400');
+        labels[1].classList.add('text-white');
+      } else {
+        pricingSection.classList.remove('show-annual');
+        pricingSection.classList.add('show-monthly');
+        annualSavings.classList.add('hidden');
+        labels[0].classList.remove('text-gray-400');
+        labels[0].classList.add('text-white');
+        labels[1].classList.remove('text-white');
+        labels[1].classList.add('text-gray-400');
+      }
+    }
+
+    // Accordion functionality
+    document.querySelectorAll('.accordion-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('.accordion-icon');
+        const isOpen = content.style.maxHeight;
+
+        // Close all
+        document.querySelectorAll('.accordion-content').forEach(c => c.style.maxHeight = null);
+        document.querySelectorAll('.accordion-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+        // Open clicked if was closed
+        if (!isOpen) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
